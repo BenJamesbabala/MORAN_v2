@@ -1,0 +1,24 @@
+{
+  "TargetCapacity": 1,
+  "AllocationStrategy": "lowestPrice",
+  "IamFleetRole": "arn:aws:iam::727376373012:role/DL-Training-Spot-Fleet-Role",
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-0c7979430705b98a2",
+      "KeyName": "pf-dev-seoul2",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-09ae22d52000db8f8"
+        }
+      ],
+      "InstanceType": "p3.8xlarge",
+      "Placement": {
+        "AvailabilityZone": "ap-northeast-2a, ap-northeast-2c"
+      },
+      "UserData": "base64_encoded_bash_script",
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::727376373012:instance-profile/DL-Training"
+      }
+    }
+  ]
+}

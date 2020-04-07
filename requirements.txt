@@ -1,0 +1,8 @@
+Colour
+LMDB
+matplotlib
+Pillow
+opencv-python
+torch
+torchvision
+awscli
